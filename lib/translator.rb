@@ -23,3 +23,4 @@ def load_library(yml_file)
 
   return emoticon_hash
 end
+
