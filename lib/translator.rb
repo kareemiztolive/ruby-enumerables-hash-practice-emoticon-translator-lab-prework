@@ -24,3 +24,13 @@ def load_library(yml_file)
   return emoticon_hash
 end
 
+def get_japanese_emoticon(yml_file, emoticon)
+
+  emoticon_hash = load_library(yml_file)
+
+  if emoticon_hash["get_emoticon"][emoticon] != nil
+    return emoticon_hash["get_emoticon"][emoticon]
+  else
+    return "Sorry, that emoticon was not found"
+  end
+end
